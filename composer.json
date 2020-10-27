@@ -1,26 +1,26 @@
 {
-	"name": "phorax/formhandler",
-	"type": "typo3-cms-extension",
-	"description": "The swiss army knife for all kinds of mailforms, completely new written using the MVC concept. Result: Flexibility, Flexibility, Flexibility  :-).",
-	"homepage": "https://github.com/PHORAX/formhandler",
-	"license": [
-		"GPL-2.0"
-	],
-	"require": {
-		"php": "~7.0.0|~7.1.0|~7.2.0",
-		"typo3/cms-core": ">=7.6.0,<9.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"Typoheads\\Formhandler\\": "Classes"
-		},
-		"classmap": [
-			"Resources/PHP/tcpdf/tcpdf.php",
-			"pi1/class.tx_formhandler_pi1.php"
-		]
-	},
-	"replace": {
-		"formhandler": "self.version",
-		"typo3-ter/formhandler": "self.version"
-	}
+  "name": "phorax/formhandler",
+  "type": "typo3-cms-extension",
+  "description": "The swiss army knife for all kinds of mailforms, completely new written using the MVC concept. Result: Flexibility, Flexibility, Flexibility  :-).",
+  "homepage": "https://github.com/PHORAX/formhandler",
+  "license": [
+    "GPL-2.0"
+  ],
+  "require": {
+    "php": ">=7.0.0 <8.0.0",
+    "typo3/cms-core": ">=7.6.0,<9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Typoheads\\Formhandler\\": "Classes"
+    },
+    "classmap": [
+      "Resources/PHP/tcpdf/tcpdf.php",
+      "pi1/class.tx_formhandler_pi1.php"
+    ]
+  },
+  "replace": {
+    "formhandler": "self.version",
+    "typo3-ter/formhandler": "self.version"
+  }
 }
